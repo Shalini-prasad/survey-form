@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,700&display=swap');
+
+:root{
+    --primary-color:#FCA5A5;
+    --secondary-color:#FEE2E2;
+    --button-color:#F87171;
+    --pre-font-color:#111827;
+    --sec-font-color:#9CA3AF;
+    --form-color:#FEF2F2;
+}
+
+html{
+    background-color: var(--primary-color);
+}
+
+*{
+    margin: 0;
+    padding:0;
+    margin-top: .5em;
+}
+
+body{
+    /* font-family: 'PT Mono'; */
+    font-family: 'Lato';
+    max-width: 100%;
+    position: relative;
+    margin: auto;  
+        
+}
+
+header #title, #description{
+    text-align: center;
+}
+
+#title{
+    margin-block-end: 0.1rem;
+}
+
+#description{
+    margin-block-end: 0.2rem;
+    margin-block-start: 0.2rem;  
+
+}
+
+fieldset{
+    padding:.5rem 2rem;
+    /* width: 400px; */
+    background-color: var(--secondary-color); 
+    margin: auto;
+    border:.1rem solid var(--button-color);
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+}
+
+label{
+    display: block;
+    margin-top: .5rem;
+    margin-bottom: 0.2rem;
+}
+
+label:first-of-type{
+    margin-top: 0rem;
+
+}
+
+input{
+    margin-top: .1rem;
+}
+
+#dropdown{
+    margin-top: 0;
+}
+
+input[type=text i], input[type=email], input[type=tel], input[type=number] {
+    padding: 0px 0px;
+    min-width: 90%;
+    padding: .4rem;
+    box-shadow: 0 0 15px 4px rgb(0 0 0 / 4%);
+    border: 1px solid var(--button-color);
+    border-radius: 10px;
+}
+
+.form-data label{
+    /* display: inline; */
+    margin-top: 0;
+}
+
+/* dropdown */
+select{
+    padding: .3rem .5rem;
+    border: 1px solid var(--button-color);
+    border-radius: 10px;
+    min-width: 90%;
+}
+
+/* radio */
+#radio label{
+    display: inline;
+}
+
+input[type=radio]{
+    margin-left: .7rem;
+}
+
+#radio input:first-of-type{
+    margin-left: 0;
+}
+
+
+/* textarea */
+textarea{
+    margin:0;
+    display: block;
+    padding:.5rem;
+    min-height: 8em;
+    min-width: 90%;
+
+}
+
+
+/* submit button */
+input[type="submit"]{
+    margin: 1rem auto;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    background-color: var(--button-color);
+    color: var(--form-color);
+    cursor: pointer;
+    font-size: .9rem;
+
+}
+/* radio */
+.form-data{
+    display: flex;
+    flex-direction: column;
+} 
+
+.form-data >div{
+    margin-top: 0.1rem;
+}
+/* checkbox */
+.form-checks {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-checks >div{
+    margin-top: 0.1rem;
+}
+
+@media(min-width: 550px) {
+    fieldset{
+      max-width: 520px;
+    }
+  }
+  
+  @media (min-width: 760px) {
+    fieldset{
+      max-width: 500px;
+    }
+  }
+  

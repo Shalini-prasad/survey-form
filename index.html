@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>    
+        <header>         
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking this survey</p>
+        </header>
+
+        <fieldset>
+        <section class="form-box">
+        <form id="survey-form" action="#" method="POST">
+           
+            <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="your-name" placeholder="Enter your sweet name" required></div>
+
+            <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email"placeholder="Enter your valid email address" required>
+            </div>
+
+            <label for="number">Phone Number</label>
+                <input type="tel" id="number" name="number" placeholder="Enter your working number" pattern="[0-9]{10}" maxlength="10"  required></div>
+
+            <label for="age" id="number-label">Age</label>
+                <input type="number" id="age" name="age" max="99" min="10" placeholder="10" required></div>
+             
+            <p>What one is your favourite feature on social media?</p>
+                    <select id="dropdown" name="feature">
+                        <option disabled selected value>Select an option</option>
+                        <option value="">Story</option>
+                        <option value="">Reels</option>
+                        <option value="">Post</option>
+                        <option value="">IG TV</option>
+                        <option value="">Filters</option>
+                        <option value="">Live</option>
+                        <option value="">Chat</option>
+                        
+                    </select>
+            <div class="form-data" id="radio">
+            <p>How may times did you open your social media?</p>
+                    <div class="radio">
+                     <input type="radio" id="number-one" name="one" value="" checked>
+                     <label for="number-one">1-3 times</label>
+                     </div>
+
+                     <div class="radio">
+                    <input type="radio" id="number-two" name="two" value="" >
+                    <label for="number-two">4-6 times</label>
+                    </div>
+
+                    <div class="radio">
+                    <input type="radio" id="number-three" name="three" value="">
+                    <label for="number-three">>7 times</label>
+                    </div>
+            </div>   
+          
+            <div class="form-checks">
+                <p>What is your preferred social media?(Check all that apply)</p>
+
+                    <div class="checks">
+                     <input type="checkbox" id="like-media" name="like-media" required>
+                     <lable for="like-media">Twitter</lable>
+                     </div>
+
+                    <div class="checks">
+                    <input type="checkbox" id="number" name="number" value="" required checked>
+                    <lable for="like-media">Facebook</lable>
+                    </div>  
+                
+                    <div class="checks">
+                    <input type="checkbox" id="number" name="number" required> 
+                    <lable for="like-media">Instagram</lable>
+                    </div>
+
+                    <div class="checks">
+                    <input type="checkbox" id="number" name="number" required> 
+                    <lable for="like-media">Reddit</lable>
+                    </div>
+                    
+                    <div class="checks">
+                    <input type="checkbox" id="number" name="number" required>
+                    <lable for="like-media">Quora</lable> 
+                    </div>                           
+                 
+                    <div class="checks">
+                    <input type="checkbox" id="number" name="number" required>
+                    <lable for="like-media">Discord</lable>
+                    </div>
+
+                    <div class="checks">
+                    <input type="checkbox" id="number" name="number" required> 
+                    <lable for="like-media">Clubhouse</lable>
+                    </div>
+
+                    <div class="checks">
+                     <input type="checkbox" id="number" name="number" required>
+                     <lable for="like-media">Youtube</lable>
+                     </div>
+            </div>
+
+        <p>Any suggestions?</p>
+
+            <textarea name="message" placeholder="Enter your suggestions here..."></textarea>
+
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </fieldset>
+
+
+    </div>
+    </section>
+
+
+    
+</body>
+</html>
